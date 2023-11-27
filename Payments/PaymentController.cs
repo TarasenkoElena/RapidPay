@@ -18,9 +18,4 @@ public class PaymentController(IPaymentService paymentService) : ControllerBase
         var paymentId = await paymentService.PayAsync(cardId, amount);
         return Ok(new { PaymentId = paymentId });
     }
-
-
-
 }
-
-
